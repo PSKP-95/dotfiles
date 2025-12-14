@@ -22,11 +22,8 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 
 # snippets
-zinit snippet OMZP::git
 zinit snippet OMZP::kubectl
-zinit snippet OMZP::podman
 zinit snippet OMZP::tmux
-zinit snippet OMZP::kubectx
 
 # load completions
 autoload -U compinit && compinit
@@ -56,6 +53,13 @@ setopt hist_find_no_dups
 eval "$(fzf --zsh)"
 
 # alias
+alias vi='nvim'
+alias zconf='vi ~/dotfiles/.zshrc'
 alias lg='lazygit'
 alias ls='ls --color'
 alias ll='ls -la'
+alias c='clear'
+
+# global variables for customization
+POWERLEVEL9K_KUBECONTEXT_DEFAULT_CONTENT_EXPANSION='${P9K_KUBECONTEXT_CLOUD_CLUSTER:-${P9K_KUBECONTEXT_CLUSTER}}'
+POWERLEVEL9K_KUBECONTEXT_DEFAULT_CONTENT_EXPANSION+='${${:-/$P9K_KUBECONTEXT_NAMESPACE}:#/default}'
