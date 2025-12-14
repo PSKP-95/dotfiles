@@ -1,0 +1,4 @@
+customCommands:
+  - key: '<c-q>'
+    context: 'global'
+    command: "code ."

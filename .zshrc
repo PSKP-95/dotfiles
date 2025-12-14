@@ -1,3 +1,6 @@
+# global variables
+export LG_CONFIG_FILE=~/.config/lazygit/config.yml
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -51,4 +54,6 @@ setopt hist_find_no_dups
 eval "$(fzf --zsh)"
 
 # alias
+alias lg='lazygit'
 alias ls='ls --color'
+alias ll='ls -la'
