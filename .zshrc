@@ -24,6 +24,8 @@ zinit light Aloxaf/fzf-tab
 # snippets
 zinit snippet OMZP::git
 zinit snippet OMZP::kubectl
+zinit snippet OMZP::podman
+zinit snippet OMZP::tmux
 zinit snippet OMZP::kubectx
 
 # load completions
