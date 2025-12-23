@@ -3,7 +3,7 @@
 "$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
 
 [mgr]
-ratio = [1, 4, 3]
+ratio = [2, 3, 3]
 sort_by = "alphabetical"
 sort_sensitive = false
 sort_reverse = false
@@ -34,7 +34,7 @@ edit = [
   { run = 'code %*', orphan = true, desc = "code", for = "windows" },
   { run = 'code -w %*', block = true, desc = "code (block)", for = "windows" },
 ]
-code = [{ run = 'code "$@"', block = false, orphan = true }]
+code = [{ run = 'code "$@"', block = false, orphan = true, desc = "vscode" }]
 open = [
   { run = 'xdg-open "$1"', desc = "Open", for = "linux" },
   { run = 'open "$@"', desc = "Open", for = "macos" },
