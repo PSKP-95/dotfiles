@@ -1,6 +1,8 @@
 # global variables
 export LG_CONFIG_FILE=~/.config/lazygit/config.yml
 export EDITOR=nvim
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]

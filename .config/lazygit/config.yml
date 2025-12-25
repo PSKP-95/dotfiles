@@ -2,3 +2,5 @@ customCommands:
   - key: '<c-q>'
     context: 'global'
     command: "code ."
+gui:
+  border: single
