@@ -1,3 +1,4 @@
 font-family = FantasqueSansM Nerd Font
 font-size = 16
 theme = Atom One Dark
+window-decoration = false
